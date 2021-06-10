@@ -6,7 +6,7 @@
     "-lunr",
     "-search",
     "search-pro",
-
+    "code",
     "summary",
     "disqus",
     "tbfed-pagefooter",
@@ -15,9 +15,16 @@
     "expandable-chapters",
     "splitter",
     "lightbox",
-    "pageview-count"
+    "pageview-count",
+
+    "-highlight",
+    "prism",
+    "prism-themes"
   ],
   "pluginsConfig": {
+    "code": {
+      "copyButtons": true
+    },
     "disqus": {
       "shortName": "gitbook"
     },
@@ -25,6 +32,11 @@
       "copyright": "Copyright &copy github.com/leson17 2020",
       "modify_label": "该文件修订时间：",
       "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "prism": {
+      "css": [
+          "prism-themes/themes/prism-duotone-dark.css"
+      ]
     }
   }
 }

@@ -1,3 +1,12 @@
-h1 , h2{ 
-  border-bottom: 1px solid #EFEAEA; 
+h1,
+h2 {
+  border-bottom: 1px solid #efeaea;
+}
+
+/* 修改代码块的样式 */
+pre[class*="language-"] {
+  border: none;
+  background-color: #222;
+  font-size: 1em;
+  line-height: 1.2em;
 }
