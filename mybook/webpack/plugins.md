@@ -576,7 +576,7 @@ Compiler 代表了整个 Webpack 从启动到关闭的生命周期，而 Compila
 
 ## 1、读取输出资源、代码块、模块及其依赖
 有些插件可能需要读取 Webpack 的处理结果，例如输出资源、代码块、模块及其依赖，以便做下一步处理。 在 emit 事件发生时，代表源文件的转换和组装已经完成，在这里可以读取到最终将输出的资源、代码块、模块及其依赖，并且可以修改输出资源的内容。 插件代码如下：
-``` JavaScript
+``` js
 class Plugin {
   apply(compiler) {
     compiler.plugin('emit', function (compilation, callback) {
