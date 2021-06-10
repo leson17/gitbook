@@ -9,10 +9,8 @@
 * [浏览器缓存](mybook/cache/README.md)
     * [思维脑图](mybook/cache/mind-map.md)
 * [流程规范](mybook/documents/README.md)
-    * [新人大礼包](mybook/documents/gift-pack.md)
+    * [前端开发环境](mybook/documents/gift-pack.md)
     * [Git commit 规范](mybook/documents/git-commit-rules.md)
 * [webpack](mybook/webpack/README.md)
     * [webpack插件工作流程和原理](mybook/webpack/plugins.md)
-
-
 
