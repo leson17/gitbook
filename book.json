@@ -3,6 +3,7 @@
   "author": "Leson",
   "discription": "大前端知识点个人总结",
   "plugins": [
+    "custom-favicon",
     "-lunr",
     "-search",
     "search-pro",
@@ -17,11 +18,17 @@
     "lightbox",
     "pageview-count",
 
+    "-sharing",
+    "sharing-plus",
+
     "-highlight",
     "prism",
-    "prism-themes"
+    "prism-themes",
+    "donate",
+    "github"
   ],
   "pluginsConfig": {
+    "favicon": "favicon/favicon.ico",
     "code": {
       "copyButtons": true
     },
@@ -29,14 +36,31 @@
       "shortName": "gitbook"
     },
     "tbfed-pagefooter": {
-      "copyright": "Copyright &copy github.com/leson17 2020",
+      "copyright": "Copyright &copy github.com/Leson17 2021",
       "modify_label": "该文件修订时间：",
       "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
     "prism": {
-      "css": [
-          "prism-themes/themes/prism-duotone-dark.css"
-      ]
+      "css": ["prism-themes/themes/prism-duotone-dark.css"]
+    },
+    "donate": {
+      "wechat": "/images/wxpay.png",
+      "alipay": "/images/alipay.png",
+      "title": "",
+      "button": "赏",
+      "alipayText": "支付宝打赏",
+      "wechatText": "微信打赏"
+    },
+    "sharing": {
+      "facebook": true,
+      "twitter": true,
+      "weibo": true,
+      "qq": true,
+      "google+": true,
+      "all": ["douban", "google", "qzone", "linkedin"]
+    },
+    "github": {
+      "url": "https://github.com/leson17"
     }
   }
 }

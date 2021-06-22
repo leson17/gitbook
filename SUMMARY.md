@@ -13,4 +13,6 @@
     * [Git commit 规范](mybook/documents/git-commit-rules.md)
 * [webpack](mybook/webpack/README.md)
     * [webpack插件工作流程和原理](mybook/webpack/plugins.md)
-
+* [正则表达式](mybook/regExp/README.md)
+    * [正则表达式 - (?!), (?:), (?=)](mybook/regExp/1.md)
+    * [贪婪匹配和惰性匹配](mybook/regExp/2.md)
