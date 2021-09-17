@@ -17,4 +17,6 @@
     * [正则表达式 - (?!), (?:), (?=)](mybook/regExp/1.md)
     * [贪婪匹配和惰性匹配](mybook/regExp/2.md)
 * [开发工具](mybook/tools/README.md)
-    * [Charles 使用教程](mybook/tools/charles/use.md) 
+    * [Charles 使用教程](mybook/tools/charles/use.md)
+    * [CharlesMac破解版安装以及使用](mybook/tools/charles/use1.md)
+
