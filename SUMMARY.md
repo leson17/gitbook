@@ -7,7 +7,7 @@
     * [数组](mybook/algorithm/array.md)
     * [队列](mybook/algorithm/queue.md)
 * [浏览器缓存](mybook/cache/README.md)
-    * [思维脑图](mybook/cache/mind-map.md)
+    * [彻底搞懂浏览器缓存机制](mybook/cache/cache.md)
 * [流程规范](mybook/documents/README.md)
     * [前端开发环境](mybook/documents/gift-pack.md)
     * [Git commit 规范](mybook/documents/git-commit-rules.md)
