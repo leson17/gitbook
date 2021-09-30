@@ -2,7 +2,7 @@
 
 * [前言](README.md)
 * [Gitbook 配置](mybook/gitbookSetting/README.md)
-    * [常用插件合集](mybook/gitbookSetting/plugins.md)
+    * [Gitbook常用插件合集](mybook/gitbookSetting/plugins.md)
 * [算法](mybook/algorithm/README.md)
     * [数组](mybook/algorithm/array.md)
     * [队列](mybook/algorithm/queue.md)
