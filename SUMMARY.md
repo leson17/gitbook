@@ -1,4 +1,4 @@
-# Table of contents
+# Summary
 
 * [前言](README.md)
 * [Gitbook 配置](mybook/gitbookSetting/README.md)
@@ -21,4 +21,5 @@
     * [CharlesMac破解版安装以及使用](mybook/tools/charles/use1.md)
 * [Typescript](mybook/ts/README.md)
     * [TS关键词总结](mybook/ts/keywords.md)
+    * [TS高级类型介绍](mybook/ts/advanced.md)
 
