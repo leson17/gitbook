@@ -5,6 +5,7 @@
     * [Gitbook常用插件合集](mybook/gitbookSetting/plugins.md)
 * [数据结构与算法](mybook/algorithm/README.md)
     * [排序算法](mybook/algorithm/sort.md)
+    * [二叉树](mybook/algorithm/binary-tree.md)
     * [数组](mybook/algorithm/array.md)
     * [队列](mybook/algorithm/queue.md)
 * [浏览器缓存](mybook/cache/README.md)
