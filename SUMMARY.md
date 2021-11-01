@@ -29,6 +29,7 @@
 * [工程化](mybook/engineering/README.md)
     * [package.json文件](mybook/engineering/packagejson.md)
     * [从0到1实现一个通用脚手架工具](mybook/engineering/init.md)
+    * [React + TS + Jest](mybook/engineering/jest.md)
 * [cookie](mybook/cookie/README.md)
     * [cookie的domainy和path详解](mybook/cookie/domain_path.md)
 
