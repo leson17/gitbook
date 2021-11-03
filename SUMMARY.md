@@ -1,8 +1,6 @@
 # Summary
 
 * [前言](README.md)
-* [Gitbook 配置](mybook/gitbookSetting/README.md)
-    * [Gitbook常用插件合集](mybook/gitbookSetting/plugins.md)
 * [数据结构与算法](mybook/algorithm/README.md)
     * [排序算法](mybook/algorithm/sort.md)
     * [二叉树](mybook/algorithm/binary-tree.md)
@@ -21,9 +19,6 @@
 * [正则表达式](mybook/regExp/README.md)
     * [正则表达式 - (?!), (?:), (?=)](mybook/regExp/1.md)
     * [贪婪匹配和惰性匹配](mybook/regExp/2.md)
-* [开发工具](mybook/tools/README.md)
-    * [Charles 使用教程](mybook/tools/charles/use.md)
-    * [CharlesMac破解版安装以及使用](mybook/tools/charles/use1.md)
 * [Typescript](mybook/ts/README.md)
     * [TS关键词总结](mybook/ts/keywords.md)
     * [TS高级类型介绍](mybook/ts/advanced.md)
@@ -35,4 +30,12 @@
     * [cookie的domainy和path详解](mybook/cookie/domain_path.md)
 * [微信相关](mybook/wechat/README.md)
     * [小程序 webview 跳转到H5链接](mybook/wechat/link.md)
+* [二进制](mybook/binary/README.md)
+    * [逻辑位运算符](mybook/binary/calculate.md)
+* [常用工具](mybook/tools/README.md)
+    * [Charles 使用教程](mybook/tools/charles/use.md)
+    * [CharlesMac破解版安装以及使用](mybook/tools/charles/use1.md)
+    * [Markdown 常用语法](mybook/tools/md.md)
+* [Gitbook 配置](mybook/gitbookSetting/README.md)
+    * [Gitbook常用插件合集](mybook/gitbookSetting/plugins.md)
 
