@@ -3,7 +3,14 @@
 - 冒泡排序
 - 选择排序
   
-## 冒泡排序
+## 冒泡排序 
+
+### 过程演示
+![](https://img-blog.csdnimg.cn/20210524164049624.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl81MTA2MTMwMw==,size_16,color_FFFFFF,t_70)
+### 思路：
+1. 通过对序列元素的两两比较，确定一个最大值交换到队尾
+2. 重复上面的步骤，获得队尾前一个元素
+3. 继续重复…
 
 ``` javascript
   const arr = [9,34,9,1,8,3,0,71,38,945,2,90];
@@ -23,6 +30,12 @@
 ```
 
 ## 选择排序
+### 过程演示
+![](https://img-blog.csdnimg.cn/2021052418393254.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl81MTA2MTMwMw==,size_16,color_FFFFFF,t_70)
+### 思路：
+1. 通过对序列元素的两两比较，选择出一个最小值与队首元素交换
+2. 重复以上步骤，确定队首后一位元素
+3. 继续重复…
 
 ``` javascript
   const arr = [9,34,9,1,8,3,0,71,38,945,2,90];
@@ -45,6 +58,16 @@
 ```
 
 ## 插入排序
+
+### 过程演示
+![](https://img-blog.csdnimg.cn/20210524184853390.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl81MTA2MTMwMw==,size_16,color_FFFFFF,t_70)
+
+### 思路
+从待排序的数组中的第二位开始，与前面的有序表中的元素从后往前依次比较，确定插入位置。 
+
+对于元素的插入可通过移动法，也可通过交换法来实现。
+
+### 代码实现：
 ```javascript
   const arr = [9,34,9,1,8,3,0,71,38,945,2,90];
 
@@ -124,18 +147,18 @@ console.log(quickSort([8,7,4,1,9,2,3])); // 打印到控制台
 ### 代码实现：
 ```js
 let arr = [1,2,3,4,5,6];
-const binarySearch = ( item ) => { // 要找的元素
+const binarySearch = item => { // 要找的元素
   let mid = null; // 找一个中间数，定义为空，用来存值
   let low = 0;  // 最低位置
   let hight  = arr.length - 1; // 最高位置（第一次比较接受数组的长度）
   let element = null; // 用来存放数组中间的值
 
-  while ( low <= hight) { // 用循环来判断，是否满足 low<=hight
-      mid = Math.floor(( low+hight ) / 2 ); // 向下取整，获取中间值得位置
+  while (low <= hight) { // 用循环来判断，是否满足 low<=hight
+      mid = Math.floor((low + hight) / 2 ); // 向下取整，获取中间值得位置
       element = arr[mid]; // 获取数组中间的值
-      if ( element < item ) { // 比较，如果数组中间的值小于要找的元素
+      if (element < item) { // 比较，如果数组中间的值小于要找的元素
           low = mid + 1;  // 此时最低位，就是之前mid  中间值加1
-      }else if ( element > item ) { // 比较，如果数组中间的值大于要找的元素
+      }else if (element > item) { // 比较，如果数组中间的值大于要找的元素
           hight  = mid - 1; // 此时的最高位置就是mid 中间值减1
       }else{
           return mid;  // 反之，进入else判断，就证明找到了
