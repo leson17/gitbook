@@ -2,15 +2,50 @@
 
 - 冒泡排序
 - 选择排序
-  
-## 冒泡排序 
+- 插入排序
+- 快速排序
+- 二分查找
 
-### 过程演示
-![](https://img-blog.csdnimg.cn/20210524164049624.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl81MTA2MTMwMw==,size_16,color_FFFFFF,t_70)
+# 一、排序算法比较
+
+衡量代码的好坏，包含两个重要指标：`运行时间`和`占用空间`。 
+
+`时间复杂度`代表运行时间，空间复杂度达标占用空间。
+
+`空间复杂度`是指算法在运行过程中临时占用存储空间大小的量度。
+
+### 1. 稳定性
+ - 稳定： 冒泡排序、归并排序、插入排序、基数排序 
+
+ - 不稳定：选择排序、快速选择排序、希尔排序、堆排序
+
+### 2、时空复杂度比较
+
+|算法名|平均时间|最差情况|稳定度|额外空间|备注|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|冒泡|O(n2)|O(n2)|稳定|O(1)|n小时较好|
+|选择|O(n2)|O(n2)|不稳定|O(1)|n小时较好|
+|插入|O(n2)|O(n2)|稳定|O(1)|大部分已排序时较好|
+|基数|O(logRB)|O(logRB)|稳定|O(n)|B是真数(0-9)，R是基数(个十百)|
+|Shell|O(nlogn)|O(ns) 1<s<2|不稳定|O(1)|s是所选分组|
+|快速|O(nlogn)|O(n2)|不稳定|O(nlogn)|n大时较好|
+|归并|O(nlogn)|O(nlogn)|稳定|O(1)|n大时较好|
+|堆|O(nlogn)|O(nlogn)|不稳定|O(1)|n大时较好|
+  
+# 二、常用的排序算法
+
+## 1. 冒泡排序 
+
 ### 思路：
-1. 通过对序列元素的两两比较，确定一个最大值交换到队尾
-2. 重复上面的步骤，获得队尾前一个元素
-3. 继续重复…
+1. 比较相邻的元素，如果前一个比后一个大，交换之
+2. 第一趟排序第1个和第2个一对，比较与交换，随后第2个和第3个一对比较交换，这样知道倒数第2个和最后1个，将3. 最大的数移动到最后一位
+4. 第二趟将第二大的数移动到倒数第二位
+5. ............
+6. 因此需要 n-1 趟
+### 过程演示
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/daa3d45406364844bda4d37be3eaf89b~tplv-k3u1fbpfcp-zoom-1.image)
+
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0d29b6ef9eee4b43848562d816bd0712~tplv-k3u1fbpfcp-zoom-1.image)
 
 ``` javascript
   const arr = [9,34,9,1,8,3,0,71,38,945,2,90];
@@ -29,13 +64,15 @@
   console.log(arr);
 ```
 
-## 选择排序
-### 过程演示
-![](https://img-blog.csdnimg.cn/2021052418393254.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl81MTA2MTMwMw==,size_16,color_FFFFFF,t_70)
+## 2. 选择排序
 ### 思路：
 1. 通过对序列元素的两两比较，选择出一个最小值与队首元素交换
 2. 重复以上步骤，确定队首后一位元素
 3. 继续重复…
+### 过程演示
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9371fb610b204e94b79dd1becb6ed0fd~tplv-k3u1fbpfcp-zoom-1.image)
+
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/110b89e135494efdbd3ea66a0f92280e~tplv-k3u1fbpfcp-zoom-1.image)
 
 ``` javascript
   const arr = [9,34,9,1,8,3,0,71,38,945,2,90];
@@ -57,15 +94,17 @@
   console.log(arr);
 ```
 
-## 插入排序
-
-### 过程演示
-![](https://img-blog.csdnimg.cn/20210524184853390.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl81MTA2MTMwMw==,size_16,color_FFFFFF,t_70)
+## 3. 插入排序
 
 ### 思路
 从待排序的数组中的第二位开始，与前面的有序表中的元素从后往前依次比较，确定插入位置。 
 
 对于元素的插入可通过移动法，也可通过交换法来实现。
+### 过程演示
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3bd40f78022f4c88b565aed194f303b8~tplv-k3u1fbpfcp-zoom-1.image)
+
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/706c2b1a6a124b5d9a96f8f1109d4519~tplv-k3u1fbpfcp-zoom-1.image)
+
 
 ### 代码实现：
 ```javascript
@@ -90,7 +129,7 @@
   console.log(arr)
 ```
 
-## 快速排序
+## 4. 快速排序
 
 ### 大致分三步： 
 
@@ -99,6 +138,10 @@
   2. 所有小于"基准"的元素，都移到"基准"的左边；所有大于"基准"的元素，都移到"基准"的右边。 
 
   3. 对"基准"左边和右边的两个子集，不断重复第一步和第二步，直到所有子集只剩下一个元素为止。
+
+### 过程演示
+
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cd64def03ff44d78921e77a7e5aca171~tplv-k3u1fbpfcp-zoom-1.image)
 
 ### 代码实现：
 ```js 
@@ -133,7 +176,7 @@ const quickSort =  (arr) => { // 传入一个数组
 console.log(quickSort([8,7,4,1,9,2,3])); // 打印到控制台
 ```
 
-## 二分查找
+## 5. 二分查找
 ### 大致分三步：
 
 1.  从有序数组的最中间元素开始查找，如果该元素正好是指定查找的值，则查找过程结束。否则进行下一步; 
@@ -171,3 +214,11 @@ const binarySearch = item => { // 要找的元素
 // 好记性不如烂笔头，写在纸上，一目了然
 console.log(binarySearch(5))
 ```
+
+### <p align=center style="color:yellow">大家多点点赞，一起坚持探讨和学习算法，哈哈哈 ！！！坚持<p>
+
+## 参考文章
+[十大经典排序算法总结（JavaScript描述）](https://juejin.cn/post/6844903444365443080)
+
+[JS中可能用得到的全部的排序算法](https://juejin.cn/post/6844903470009417742)
+
